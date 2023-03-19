@@ -32,3 +32,15 @@ The following table shows the performance of the models used in this project:
 | XGBoost            | 0.7943   | 0.89                | 0.68             | 0.77               | 9               | 25              |
 | LightGBM           | 0.8159   | 0.88                | 0.73             | 0.80               | 10              | 21              |
 
+##Usage
+
+To run the script, you will need Python and the following libraries installed:
+
+1. numpy
+2. pandas
+3. scikit-learn
+4. imbalanced-learn
+5. scipy
+6. xgboost
+7. lightgbm
+Download the dataset from the source and place it in the same directory as the script. Then, simply run the script using Jupyternotebook.
