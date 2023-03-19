@@ -43,4 +43,19 @@ To run the script, you will need Python and the following libraries installed:
 5. scipy
 6. xgboost
 7. lightgbm
+
 Download the dataset from the source and place it in the same directory as the script. Then, simply run the script using Jupyternotebook.
+
+
+## Conclusion
+
+Based on the evaluation metrics, the Random Forest model performs the best among the selected models for this imbalanced dataset. The reasoning behind this conclusion is as follows:
+
+1. AUPRC (Area Under the Precision-Recall Curve): Random Forest has the highest AUPRC (0.8348) among all models, indicating better overall performance in distinguishing between the classes when dealing with imbalanced data.
+2. Precision, Recall, and F1-score: Random Forest has the highest precision (0.91) for the positive class (fraud), which means it has the lowest false positive rate among the models. It also has a good recall (0.76), which means it can detect a considerable proportion of the actual fraud cases. The F1-score (0.83) for the positive class in Random Forest is also the highest, indicating a good balance between precision and recall.
+3. Confusion Matrix: The confusion matrix of the Random Forest model shows the smallest number of false positives (7) and a relatively low number of false negatives (23) compared to other models.
+
+Although the accuracy is high for all the models, it is not a reliable metric in this case due to the highly imbalanced nature of the dataset. The other metrics mentioned above provide a better perspective on the model's performance.
+
+Considering all these factors, the Random Forest model seems to be the best performer among the selected models for this imbalanced dataset.
+
